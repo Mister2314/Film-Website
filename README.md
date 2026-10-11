@@ -1,23 +1,38 @@
-# Leitmotif — Film Trailers Site
+<h1 align="center">Leitmotif — Film Trailers Site</h1>
 
-**A film trailer site with a poster grid and condensed editorial typography.**
+<p align="center"><b>A film trailer site with a poster grid and condensed editorial typography.</b></p>
 
-[![Live Demo](https://img.shields.io/badge/Live_Demo-mister2314.github.io/Film--Website-2ea44f?style=flat-square&logo=vercel&logoColor=white)](https://mister2314.github.io/Film-Website/)
+<p align="center">
+[![Live Demo](https://img.shields.io/badge/Live_Demo-▶-2ea44f?style=for-the-badge&logo=vercel&logoColor=white)](https://mister2314.github.io/Film-Website/)
 ![HTML5](https://img.shields.io/badge/HTML5-e34f26?style=flat-square&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-1572b6?style=flat-square&logoColor=white)
 ![AOS](https://img.shields.io/badge/AOS-0969da?style=flat-square&logoColor=white)
+</p>
+
+<p align="center">[**Live demo**](https://mister2314.github.io/Film-Website/) · [Quick start](#quick-start) · [Features](#features) · [Architecture](#architecture) · [FAQ](#faq)</p>
 
 <p align="center">
   <a href="https://mister2314.github.io/Film-Website/">
-    <img src="docs/preview.png" alt="Leitmotif — Film Trailers Site — desktop preview" width="100%">
+    <img src="docs/demo.gif" alt="Leitmotif — Film Trailers Site — animated demo" width="88%">
   </a>
 </p>
+
+<p align="center"><sub>Live capture of the real build — 2437 KB, loops forever.</sub></p>
 
 ## Overview
 
 A cinematic site for a fictional trailer platform. The layout is poster-driven: a logo hero, a navigation bar, and grids of film stills arranged to read like a programme.
 
 The type pairing — Barlow Condensed for headings against Roboto Mono for detail text — does the editorial work, and AOS brings the grids in as the page scrolls.
+
+## At a glance
+
+| Field | Detail |
+| --- | --- |
+| **Type** | Static site — no build step |
+| **Primary language** | HTML |
+| **Live demo** | [mister2314.github.io/Film-Website](https://mister2314.github.io/Film-Website/) |
+| **Repository** | [Mister2314/Film-Website](https://github.com/Mister2314/Film-Website) |
 
 ## Features
 
@@ -36,25 +51,30 @@ The type pairing — Barlow Condensed for headings against Roboto Mono for detai
 | Animation | AOS |
 | Deploy | GitHub Pages |
 
+## Architecture
+
+```mermaid
+flowchart LR
+  A["Browser"] --> B["Markup<br/>HTML5"] --> C["Styling<br/>CSS3"] --> D["Animation<br/>AOS"] --> E["Deploy<br/>GitHub Pages"] --> F["Deploy"]
+```
+
 ## Screenshots
 
 | Desktop | Mobile |
 | :---: | :---: |
 | <img src="docs/preview.png" alt="Desktop view"> | <img src="docs/preview-mobile.png" alt="Mobile view" width="230"> |
 
-## Getting Started
-
-No build step and no dependencies — clone the repo and open the entry file, or serve the folder locally:
+## Quick Start
 
 ```bash
 git clone https://github.com/Mister2314/Film-Website.git
 cd Film-Website
 
-# Option 1 — open it directly
+# open it directly
 start index.html      # Windows
 open  index.html      # macOS
 
-# Option 2 — serve it locally
+# or serve the folder
 npx serve .
 ```
 
