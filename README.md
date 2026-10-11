@@ -3,13 +3,13 @@
 <p align="center"><b>A film trailer site with a poster grid and condensed editorial typography.</b></p>
 
 <p align="center">
-[![Live Demo](https://img.shields.io/badge/Live_Demo-▶-2ea44f?style=for-the-badge&logo=vercel&logoColor=white)](https://mister2314.github.io/Film-Website/)
-![HTML5](https://img.shields.io/badge/HTML5-e34f26?style=flat-square&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572b6?style=flat-square&logoColor=white)
-![AOS](https://img.shields.io/badge/AOS-0969da?style=flat-square&logoColor=white)
+<a href="https://mister2314.github.io/Film-Website/"><img src="https://img.shields.io/badge/Live_Demo-2ea44f?style=flat-square&logo=vercel&logoColor=white" alt="Live demo" height="28"></a>
+<img src="https://img.shields.io/badge/HTML5-e34f26?style=flat-square" alt="HTML5" height="20">
+<img src="https://img.shields.io/badge/CSS3-1572b6?style=flat-square" alt="CSS3" height="20">
+<img src="https://img.shields.io/badge/AOS-0969da?style=flat-square" alt="AOS" height="20">
 </p>
 
-<p align="center">[**Live demo**](https://mister2314.github.io/Film-Website/) · [Quick start](#quick-start) · [Features](#features) · [Architecture](#architecture) · [FAQ](#faq)</p>
+<p align="center"><a href="https://mister2314.github.io/Film-Website/"><b>Live demo</b></a> &nbsp;·&nbsp; <a href="#quick-start">Quick start</a> &nbsp;·&nbsp; <a href="#features">Features</a> &nbsp;·&nbsp; <a href="#architecture">Architecture</a> &nbsp;·&nbsp; <a href="#faq">FAQ</a></p>
 
 <p align="center">
   <a href="https://mister2314.github.io/Film-Website/">
@@ -85,6 +85,35 @@ index.html — hero, navigation and poster grids
 assets/css/style.css — layout and typography
 assets/img/ — poster and still imagery
 ```
+
+## FAQ
+
+<details>
+<summary><b>What is Leitmotif?</b></summary>
+
+A fictional trailer platform. The page exists to practise poster-driven layout — grids of stills arranged to read like a printed programme.
+
+</details>
+
+<details>
+<summary><b>Why Barlow Condensed with Roboto Mono?</b></summary>
+
+A condensed face for headlines and a mono for detail text is the standard editorial pairing. It does the work that imagery would otherwise have to.
+
+</details>
+
+<details>
+<summary><b>Is there any video?</b></summary>
+
+No. Despite the subject, the page is entirely stills — which was the constraint I set myself.
+
+</details>
+
+## Roadmap
+
+- [ ] Add real trailer embeds
+- [ ] Make the poster grids keyboard-navigable
+- [ ] Compress the still images
 
 ## Author
 
