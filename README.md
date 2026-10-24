@@ -1,8 +1,8 @@
-﻿# Leitmotif — Film Trailers Site
+# Leitmotif — Film Trailers Site
 
 A poster-driven landing page for a fictional film trailer platform.
 
-**Live demo:** https://mister2314.github.io/Film-Website/
+**Live demo:** https://film-website-mister2314.vercel.app/
 
 <div align="center">
 
@@ -18,7 +18,7 @@ A static page built around stills: a logo hero, top navigation, and several grid
 
 ## Tech stack
 
-HTML · CSS · AOS
+React 19 · TypeScript · Vite
 
 ## Features
 

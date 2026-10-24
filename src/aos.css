@@ -1,0 +1,15 @@
+/* Minimal replication of AOS 2.3.1 default styles (used animation types only) */
+
+[data-aos] {
+  transition-property: transform, opacity;
+  transition-duration: 400ms;
+  transition-timing-function: ease;
+}
+[data-aos='fade-up'] {
+  transform: translate3d(0, 100px, 0);
+  opacity: 0;
+}
+[data-aos].aos-animate {
+  transform: translateZ(0);
+  opacity: 1;
+}
