@@ -1,10 +1,16 @@
-# Leitmotif — Film Trailers Site
+﻿# Leitmotif — Film Trailers Site
 
 A poster-driven landing page for a fictional film trailer platform.
 
 **Live demo:** https://mister2314.github.io/Film-Website/
 
-<img src="docs/preview.png" alt="Leitmotif screenshot" width="380">
+<div align="center">
+
+| Desktop | Mobile |
+|---|---|
+| <img src="docs/shot-desktop.png" alt="Desktop view" width="700"> | <img src="docs/shot-mobile.png" alt="Mobile view" width="290"> |
+
+</div>
 
 ## What it does
 
