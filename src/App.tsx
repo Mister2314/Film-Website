@@ -9,6 +9,7 @@ export default function App() {
   useAos()
   return (
     <>
+      <a className="skip-link" href="#films">skip to films</a>
       <Hero />
       <Header />
       <HeroSection />

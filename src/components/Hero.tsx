@@ -1,14 +1,14 @@
 export default function Hero() {
   return (
-    <section className="hero">
+    <section className="hero" id="top">
       <div className="hero-div">
         <div className="img-container">
           <img
-            style={{ marginTop: 40 }}
             src="./assets/img/p8-logo-img-04.jpg"
-            width="95%"
-            height="150px"
-            alt=""
+            width="700"
+            height="150"
+            fetchPriority="high"
+            alt="Leitmotif — film trailer production logo"
           />
         </div>
       </div>
