@@ -1,3 +1,5 @@
+import Newsletter from './Newsletter'
+
 const instagramPhotos = [
   { src: './assets/img/photo-1.jpg', alt: 'Behind the scenes — camera rig at dusk' },
   { src: './assets/img/photo-2.jpg', alt: 'On set — lighting a night exterior' },
@@ -7,19 +9,24 @@ const instagramPhotos = [
   { src: './assets/img/photo-6.jpg', alt: 'Final screening in the edit suite' },
 ]
 
-const productionLinks = ['About the studio', 'Latest trailers', 'Studio tour', 'Press & news', 'Help (FAQ)']
+const productionLinks = [
+  { label: 'About the studio', href: '#production' },
+  { label: 'Latest trailers', href: '#films' },
+  { label: 'All cuts', href: '#films' },
+  { label: 'Newsletter', href: '#newsletter' },
+]
 
 export default function Footer() {
   return (
-    <footer id="production">
+    <footer id="site-footer">
       <div className="top-holder">
         <div className="top-box">
           <div className="box1">
             <h5>our production.</h5>
             <ul>
-              {productionLinks.map((label) => (
-                <li key={label}>
-                  <a href="#films">{label}</a>
+              {productionLinks.map((link) => (
+                <li key={link.label}>
+                  <a href={link.href}>{link.label}</a>
                 </li>
               ))}
             </ul>
@@ -28,7 +35,7 @@ export default function Footer() {
             <h5>about.</h5>
             <p>Feature presentations, cut the modern way — trailers, festival cuts and director edits from one small screening room.</p>
             <div className="card">
-              <a className="social-link1" href="https://www.instagram.com/" target="_blank" rel="noreferrer" aria-label="Leitmotif on Instagram">
+              <a className="social-link1" href="https://www.instagram.com/" target="_blank" rel="noreferrer" aria-label="Leitmotif on Instagram (opens in a new tab)">
                 <svg viewBox="0 0 16 16" aria-hidden="true" fill="currentColor" height="16" width="16" xmlns="http://www.w3.org/2000/svg">
                   <path
                     fill="white"
@@ -36,7 +43,7 @@ export default function Footer() {
                   />
                 </svg>
               </a>
-              <a className="social-link2" href="https://twitter.com/" target="_blank" rel="noreferrer" aria-label="Leitmotif on X (Twitter)">
+              <a className="social-link2" href="https://twitter.com/" target="_blank" rel="noreferrer" aria-label="Leitmotif on X (opens in a new tab)">
                 <svg viewBox="0 0 16 16" aria-hidden="true" fill="currentColor" height="16" width="16" xmlns="http://www.w3.org/2000/svg">
                   <path
                     fill="white"
@@ -44,7 +51,7 @@ export default function Footer() {
                   />
                 </svg>
               </a>
-              <a className="social-link4" href="https://www.facebook.com/" target="_blank" rel="noreferrer" aria-label="Leitmotif on Facebook">
+              <a className="social-link4" href="https://www.facebook.com/" target="_blank" rel="noreferrer" aria-label="Leitmotif on Facebook (opens in a new tab)">
                 <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512" fill="#fff">
                   <path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z" />
                 </svg>
@@ -56,29 +63,8 @@ export default function Footer() {
             <p className="paragraph1">
               <label htmlFor="newsletter-email">Subscribe to the Leitmotif newsletter — one letter per premiere.</label>
             </p>
-            <form
-              onSubmit={(e) => {
-                e.preventDefault()
-              }}
-            >
-              <input
-                id="newsletter-email"
-                type="email"
-                name="email"
-                placeholder="your email"
-                autoComplete="email"
-                aria-label="Email address for the newsletter"
-              />
-              <button className="newsletter-go" type="submit" aria-label="Subscribe">
-                <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 1792 1792">
-                  <path
-                    fill="currentColor"
-                    d="M1764 11q33 24 27 64l-256 1536q-5 29-32 45q-14 8-31 8q-11 0-24-5l-453-185l-242 295q-18 23-49 23q-13 0-22-4q-19-7-30.5-23.5T640 1728v-349l864-1059l-1069 925l-395-162q-37-14-40-55q-2-40 32-59L1696 9q15-9 32-9q20 0 36 11z"
-                  />
-                </svg>
-              </button>
-            </form>
-            <p className="paragraph2">© 2019 Qode Interactive, All Rights Reserved</p>
+            <Newsletter />
+            <p className="paragraph2">© 2019–2026 Leitmotif. Cut, graded and shipped from one room.</p>
           </div>
           <div className="box4">
             <h5>instagram posts.</h5>

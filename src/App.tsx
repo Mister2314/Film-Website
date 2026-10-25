@@ -2,6 +2,7 @@ import { useAos } from './useAos'
 import Hero from './components/Hero'
 import Header from './components/Header'
 import HeroSection from './components/HeroSection'
+import About from './components/About'
 import Footer from './components/Footer'
 import UpIcon from './components/UpIcon'
 
@@ -13,6 +14,8 @@ export default function App() {
       <Hero />
       <Header />
       <HeroSection />
+      <hr />
+      <About />
       <hr />
       <Footer />
       <UpIcon />

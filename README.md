@@ -34,15 +34,26 @@ React 19 · TypeScript · Vite — zero runtime animation libraries. All motion 
 ## Features
 
 - **Letterbox hover choreography** — cinema bars, image scale and play glyph on `pointer: fine` devices only
+- **Film index with filter** — chip filters over the local catalogue (trailers / festival cuts / director's cuts) with a live count and a real empty state; no API, no keys
+- **Detail views** — a keyboard-closable dialog per film (runtime, cut notes, watch link), Escape to close, focus restored on exit
+- **Dark / light themes** — system default with a persisted toggle; a pre-paint bootstrap script means no first-paint flash; the light "matinee" theme is designed, not inverted
+- **Upgraded reveals** — film slots and sections arrive once with a 700 ms expo-out ease; under `prefers-reduced-motion` content simply shows
+- **Newsletter with real states** — inline validation error, sending spinner, done confirmation (kept on-device; a static host has no backend, and the copy says so)
+- **Real about section** — `#production` is an actual studio page now, not a footer anchor; honest contact mailto
 - **Lazy media pipeline** — every still is `loading="lazy"` + `decoding="async"` with explicit dimensions (no CLS); only the hero logo loads eagerly with `fetchpriority="high"`
-- **Mobile as its own composition** — single column, full-bleed frames, no fixed-viewport heights, no horizontal scroll at 390 px
-- **Keyboard-first film index** — skip link, amber focus outlines, and descriptive labels ("Trailer 03: late night feelings — watch on YouTube, opens in a new tab")
-- **Reduced-motion fallback** — under `prefers-reduced-motion` the static page is the complete page: bars stay drawn, play glyphs stay visible, transitions collapse to zero
-- **Real copy** — every film carries its own one-line blurb and metadata instead of placeholder text
+- **Mobile as its own composition** — single column, full-bleed frames, no fixed-viewport heights, no horizontal scroll at 390 px, ≥44 px touch targets
+- **Keyboard-first** — skip link, amber focus outlines, focus-visible states on every interactive element, descriptive link labels
+- **Reduced-motion fallback** — under `prefers-reduced-motion` the static page is the complete page
 
 ## Accessibility
 
-Contrast-checked palette (`#f2efe6` on `#0a0a0c` ≈ 15:1), labelled controls, decorative SVGs hidden from the tree, email field with a real label, and visible focus states on every interactive element.
+Contrast-checked palettes in both themes, labelled controls, decorative SVGs hidden from the tree, email field with a real label and `aria-invalid` + `role="alert"` on errors, a labelled `role="dialog"` for details, and visible focus states on every interactive element.
+
+## Research basis
+
+- DappaSol, "Cinematic Website Design: 10 Examples That Feel Like Film" (Sep 2026) — Locomotive/Obys show typography-led pacing beats WebGL for film sites at this scale; chose scroll-triggered motion over 3D.
+- Motion guidance from current micro-interaction practice (web.dev / community guides, 2026): transform/opacity only, short state eases, visible press feedback, hover variants gated to `pointer: fine`.
+- FreeAPI.watch movie-API comparison (2026) — all free film metadata APIs need keys, which must be server-side; for a free static site the catalogue is curated local data instead, with client-side filtering.
 
 ## Run locally
 
